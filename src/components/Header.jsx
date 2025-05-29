@@ -1,23 +1,23 @@
-
-import React from 'react'
+import React from 'react';
 import logo from '../assets/logo/hashtag.svg';
 import UserButtons from './UserButtons';
 
 const Header = () => {
   return (
+    <header className="text-white flex flex-wrap items-center justify-between bg-slate-950 px-4 py-3 shadow-xl sticky top-0 z-10">
+      <a href="/" className="flex items-center">
+        <img
+          className="h-12 sm:h-16 rounded-lg mx-2 my-1"
+          src={logo}
+          alt="Logomarca hashtag"
+        />
+      </a>
 
-    <header className='  text-white flex text-xl sticky top-0 shadow-xl shadow-slete-400 bg-slate-950 text-slete-200 px-8 py-4 items-end justify-between text-base z-10'>
-        
-   <a href="/">
- <img className='h-16 px-2 rounded-lg mx-4 my-3 ' src={logo} alt='Logamarca hashtag'/>
+      <div className="w-full sm:w-auto flex justify-end mt-2 sm:mt-0">
+        <UserButtons />
+      </div>
+    </header>
+  );
+};
 
-   </a>
-
-
-   
-    <UserButtons/>
-   </header>
-  )
-}
-
-export default Header
+export default Header;
