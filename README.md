@@ -1,12 +1,57 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Magazine Hashtag React
 
-Currently, two official plugins are available:
+Este projeto é uma aplicação web desenvolvida com React e Vite, hospedada na Vercel. A proposta é apresentar uma interface moderna e responsiva para um magazine digital.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 Acesse o projeto
+https://magazinehashtagreact.vercel.app
 
-## Expanding the ESLint configuration
+🚀 Tecnologias Utilizadas
+React — Biblioteca JavaScript para interfaces de usuário
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Vite — Ferramenta de build rápida para projetos modernos
+
+Vercel — Plataforma de hospedagem e deploy contínuo
+
+📦 Instalação e Execução Local
+Para rodar o projeto localmente:
+
+bash
+Copiar
+Editar
+git clone https://github.com/seu-usuario/magazinehashtagreact.git
+cd magazinehashtagreact
+npm install
+npm run dev
+A aplicação estará disponível em http://localhost:5173.
+
+🛠 Scripts Disponíveis
+npm run dev — Inicia o servidor de desenvolvimento com Vite
+
+npm run build — Gera a versão de produção da aplicação
+
+npm run preview — Visualiza a versão de produção localmente
+
+📁 Estrutura de Pastas
+pgsql
+Copiar
+Editar
+
+magazinehashtagreact/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   ├── App.jsx
+│   └── main.jsx
+├── index.html
+├── package.json
+└── vite.config.js
+📄 Licença
+Este projeto está licenciado sob a MIT License.
+Wikipédia
++1
+create-react-app-example.vercel.app
++1

@@ -88,7 +88,18 @@ flex-col   => Organiza os itens em coluna (verticalmente)
 gap-2      => Espaço entre elementos internos (0.5rem / 8px)
 -->
 
-
+UserButtons
+O que foi aplicado:
+Classe	Função
+flex gap-4 p-4	Layout horizontal com espaçamento
+bg-white, bg-slate-800	Cores de fundo para contraste
+text-slate-800, text-white	Cor de texto correspondente
+rounded-lg	Bordas arredondadas elegantes
+shadow-md	Sombra moderada para destaque
+border border-slate-300	Borda discreta no botão branco
+hover:scale-105	Efeito suave de zoom no hover
+hover:bg-slate-100, hover:bg-slate-600	Alteração da cor ao passar o mouse
+transition duration-300 transform	Suaviza e ativa as transições visuais
 
 
 Usando icons da bibliotes fontawesome configuração:
