@@ -1,0 +1,117 @@
+Anotações:
+
+caso ainda não tenha a extenção:
+
+👉 ES7+ React/Redux/React-Native snippets
+para usar ao atalho rafce ao criar os components
+
+ Passo a passo para instalar:
+Abra o VS Code
+ES7+ React/Redux/React-Native snippets
+Clique em "Install" (o autor geralmente é dsznajder)
+
+Configriando do projeto 
+
+$ npm create vite@latest
+
+
+Usando  tailwindcss.com/docs/object-fit
+
+npm install -D tailwindcss postcss autoprefixer
+
+
+Create os arquivos tailwindcss
+mpx tailwindcss init -p 
+
+Configuração: no tailwind.config.js
+content: ['./index.html', './src/*.{js, jsx}','./src/**/*.{js,jsx}'],
+
+No index.css incliar os arquivos:
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+ Comentário explicando cada classe:
+
+Estilos do elemento:
+
+text-white          => Define a cor do texto como branca. ⚠️ Pode ser sobrescrita depois por 'text-slate-200'
+flex                => Usa display flex, permitindo layout flexível interno
+text-xl             => Define o tamanho do texto como extra grande
+sticky              => Faz o elemento "grudar" no topo da página quando você rola (scroll)
+top-0               => Define que o sticky será aplicado ao topo (top: 0)
+shadow-xl           => Aplica uma sombra grande ao redor do elemento
+shadow-slate-400    => Define a cor da sombra como cinza claro (corrigir: escrito errado no original)
+bg-slate-950        => Define o fundo como um cinza quase preto
+text-slate-200      => ⚠️ Define o texto como cinza claro (essa classe sobrescreve 'text-white')
+px-8                => Padding horizontal (esquerda e direita) de 2rem (32px)
+py-4                => Padding vertical (cima e baixo) de 1rem (16px)
+items-end           => Alinha os itens ao final no eixo vertical (inferior)
+justify-between     => Espaça os itens horizontalmente com espaço entre eles
+text-base           => ⚠️ Define o tamanho do texto como base (1rem), sobrescreve 'text-xl'
+z-10                => Define a ordem de empilhamento (z-index: 10), para que fique acima de outros elementos
+
+<!--
+card-produto         => Classe personalizada (talvez vinda de um CSS externo ou global)
+group                => Permite aplicar efeitos em filhos com 'group-hover' ou 'group-focus'
+w-48                 => Largura fixa de 12rem (192px)
+bg-stone-100         => Fundo em tom claro de pedra (bege claro)
+shadow-xl            => Sombra grande para profundidade
+shadow-slate-200     => Cor da sombra (cinza claro) — sobrepõe o valor padrão
+flex                 => Torna o container um flexbox
+flex-col             => Organiza os elementos verticalmente (em coluna)
+justify-around       => Espaça os elementos verticalmente com espaço ao redor
+border-2             => Borda com espessura 2
+border-gray-200      => Cor da borda cinza clara
+rounded-lg           => Bordas arredondadas grandes
+-->
+<!--efeitos em filhos group-hover
+group-hover:scale-110 => Ao passar o mouse no container pai (.group), a imagem aumenta 10%
+rounded-lg            => Bordas arredondadas
+mx-4 my-3             => Margem horizontal de 1rem (16px) e vertical de 0.75rem (12px)
+transition            => Habilita transições suaves (para scale)
+duration-300          => Duração da transição: 300ms
+-->
+
+
+⚠️ Observações:
+- text-white e text-slate-200 estão em conflito. Apenas a **última** (`text-slate-200`) será aplicada.
+- text-xl e text-base também estão em conflito. Apenas `text-base` será aplicada.
+- shadow-slete-400 está **escrito errado**. O correto é `shadow-slate-400`.
+-->
+<!--
+p-4        => Padding interno de 1rem (16px)
+flex       => Container flexível
+flex-col   => Organiza os itens em coluna (verticalmente)
+gap-2      => Espaço entre elementos internos (0.5rem / 8px)
+-->
+
+
+
+
+Usando icons da bibliotes fontawesome configuração:
+
+ https://docs.fontawesome.com/web/use-with/react
+
+npm i --save @fortawesome/fontawesome-svg-core
+
+em: Then add the Pro icon style packages that you plan to use in your app:
+
+escolha a opção: Free SVG Icon Package
+
+instale:
+
+npm i --save @fortawesome/free-solid-svg-icons
+npm i --save @fortawesome/free-regular-svg-icons
+npm i --save @fortawesome/free-brands-svg-icons
+
+3. Add the React Component
+
+npm i --save @fortawesome/react-fontawesome@latest
+
+para usar os icons acesar https://fontawesome.com/icons
+
+
+<FontAwesomeIcon icon="fa-solid fa-cart-shopping" />
