@@ -1,4 +1,6 @@
-import React from 'react'
+
+import { faCartPlus } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const ProductCard = ({ id, name, brand, price, image, feminine }) => {
   return (
@@ -13,6 +15,8 @@ const ProductCard = ({ id, name, brand, price, image, feminine }) => {
         <p className="text-sm text-gray-500">{brand}</p>
         <p className="text-lg font-semibold text-gray-800">{name}</p>
         <p className="text-base font-medium text-green-600">R$ {price}</p>
+        <button className=' rounded-md mx-4 my-01 text-slate-100 bg-slate-950 group-hover:scale-110' >
+         <FontAwesomeIcon icon={faCartPlus}/> Adicionar</button>
        </div> 
     </article>
   )
