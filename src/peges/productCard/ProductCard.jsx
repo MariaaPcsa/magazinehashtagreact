@@ -3,7 +3,7 @@ import { faCartPlus } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 const ProductCard = ({ id, name, brand, price, image, feminine }) => {
   return (
-    <article className=" card-produto group  w-48 bg-stone-100 shadow-xl shadow-slate-200 flex flex-col justify-around border-2 border-gray-200 rounded-lg sm:mx-4 md:mx-6  md:px-2 md:py-30
+    <article className=" card-produto group  w-48 bg-stone-100 shadow-xl shadow-slate-200 flex flex-col justify-around border-2 border-gray-200 rounded-lg sm:mx-6 md:mx-8
 ">
       <img
         src={image}
