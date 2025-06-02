@@ -4,7 +4,7 @@ import UserButtons from './UserButtons';
 
 const Header = () => {
   return (
-    <header className="text-white flex flex-wrap items-center justify-between bg-slate-950 px-4 py-3 shadow-xl sticky top-0 z-10">
+    <header className="text-white flex flex-wrap items-center justify-between bg-slate-950 px-4 py-3 shadow-xl text-xl sticky top-0 z-10">
       <a href="/" className="flex items-center">
         <img
           className="h-14 sm:h-16 rounded-lg mx-2 my-1 w-full"
