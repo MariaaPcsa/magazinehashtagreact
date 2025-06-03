@@ -11,8 +11,6 @@ import ProductsContainer from '../productsContainer/ProductsContainer'
       <ProductFilters/>
        <ProductsContainer/>
 
-
-
         </>
         
    )
